@@ -5,4 +5,7 @@ rm -rf ./*
 cmake ..
 make
 cd ..
+
 python write.py
+
+python read.py

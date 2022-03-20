@@ -13,7 +13,8 @@
 //QD queue depth
 #define QD  32
 #define BS (16 * 1024)
-
+#define byte  unsigned char
+#define ull unsigned long long
 static int infd, outfd;
 
 
