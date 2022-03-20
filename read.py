@@ -17,5 +17,5 @@ data = reader.read(indices)  # return a list of bytes-like data
 n = len(data)
 for i in range(n):     
     sample = deserialize(data[i])     # do what you want
-    print("get sample:", sample)
+    print("get sample:",i, sample)
 reader.close()

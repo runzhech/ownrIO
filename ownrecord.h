@@ -42,15 +42,6 @@ private:
     ull checksum_base;
 };
 
-class ownDataset : public FileReader
-{
-public:
-    ownDataset(const std::string &name): FileReader(name, true){}
-    std::vector<py::bytes> __getitem__(const std::vector<int> &indices)
-    {
-        return this->read(indices);
-    }
-};
 
 class FileWriter
 {
