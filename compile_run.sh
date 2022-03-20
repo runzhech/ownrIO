@@ -7,5 +7,5 @@ make
 cd ..
 
 python write.py
-
 python read.py
+python test.py

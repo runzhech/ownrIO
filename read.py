@@ -10,10 +10,12 @@ def deserialize(data):
     return pickle.loads(data)
 fname = 'test.owr'
 reader = FileReader(fname, check_data=True) 
-print(f'Number of samples: {reader.n}')  
-indices = [3, 6, 0, 10]      # indices of each sample
+print(f'Number of samples: {reader.n}')
+# indices = [3, 6, 0, 10]      # indices of each sample
+indices = [0,1,2]
 data = reader.read(indices)  # return a list of bytes-like data
 n = len(data)
 for i in range(n):     
     sample = deserialize(data[i])     # do what you want
+    print("get sample:",i, sample)
 reader.close()
