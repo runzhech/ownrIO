@@ -8,7 +8,7 @@ def serialize(sample):
     Here we simply use pickle.dumps().    """     
     return pickle.dumps(sample)
 samples = [i for i in range(50)]  # anything you would like to store
-# samples = ['123', '456', '789', '101112']
+samples = ['123', '456', '789', '101112','adaaf','aavnz','asdf','xczv','asdzxcv','qwg32','gzxcv']
 fname = 'test.owr'
 n = len(samples)  # number of samples to be written
 writer = FileWriter(fname, n)  

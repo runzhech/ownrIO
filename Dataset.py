@@ -7,7 +7,6 @@ class CustomDataset(FileReader):
     def __getitem__(self, *index):
         result = []
         idx = [it for it in index[0]]
-        print(idx)
         byte_ = super().read(idx)
         for data in byte_:
             result.append(pickle.loads(data))
